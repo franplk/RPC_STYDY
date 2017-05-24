@@ -2,10 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>cn.plk</groupId>
-    <artifactId>rpc</artifactId>
+    <artifactId>javarmi</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>commonAPI</artifactId>
+  <artifactId>rmi-api</artifactId>
   <name>API</name>
   <description>Interface Definition</description>
 </project>
