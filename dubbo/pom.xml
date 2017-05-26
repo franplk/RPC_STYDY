@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>cn.plk</groupId>
+		<artifactId>rpc</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>dubbo-server</artifactId>
+	<name>Dubbo Study</name>
+	<description>RPC FrameWork Dubbo</description>
+	<packaging>pom</packaging>
+	
+	<modules>
+		<module>dubbo-api</module>
+		<module>dubbo-client</module>
+		<module>dubbo-server</module>
+	</modules>
+
+	<!-- 版本属性信息 -->
+	<properties>
+		<jstl.version>1.2</jstl.version>
+		<servlet.version>2.5</servlet.version>
+		<spring.version>4.3.6.RELEASE</spring.version>
+	</properties>
+
+	<dependencies>
+		<!-- spring-test -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
