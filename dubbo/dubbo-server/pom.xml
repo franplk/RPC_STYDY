@@ -5,36 +5,30 @@
 	
 	<parent>
 		<groupId>cn.plk</groupId>
-		<artifactId>rpc</artifactId>
+		<artifactId>dubbo</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	
 	<artifactId>dubbo-server</artifactId>
+	<packaging>war</packaging>
 	<name>Dubbo Study</name>
 	<description>RPC FrameWork Dubbo</description>
 	
 	<!-- 版本属性信息 -->
 	<properties>
-		<jstl.version>1.2</jstl.version>
-		<servlet.version>2.5</servlet.version>
-		<dubbo.version>2.5.3</dubbo.version>
-		<spring.version>4.3.6.RELEASE</spring.version>
 	</properties>
 	
 	<dependencies>
-	
 		<!-- spring-test -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>${spring.version}</version>
-			<scope>test</scope>
 		</dependency>
 	
-		<!-- Spring Web MVC -->
+		<!-- Spring Web -->
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
+			<artifactId>spring-web</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
 		
@@ -42,13 +36,6 @@
 		<dependency>
 		    <groupId>com.alibaba</groupId>
 		    <artifactId>dubbo</artifactId>
-		    <version>${dubbo.version}</version>
-		    <exclusions>
-		    	<exclusion>
-		    		<groupId>org.springframework</groupId>
-		    		<artifactId>spring</artifactId>
-		    	</exclusion>
-		    </exclusions>
 		</dependency>
 		
 		<!-- API -->

@@ -10,7 +10,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @author {康培亮/AB052634}
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:dubbo/server.xml")
+@ContextConfiguration(locations = "classpath:spring/dubbo.xml")
 public class Server extends AbstractJUnit4SpringContextTests {
 
 	@Test

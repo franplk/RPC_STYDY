@@ -1,4 +1,7 @@
-package cn.plk.dubbo.client;
+/**
+ * 
+ */
+package cn.plk.dubbo.client.test;
 
 import java.rmi.RemoteException;
 
@@ -16,8 +19,8 @@ import cn.plk.dubbo.api.HelloAPI;
  *
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:dubbo/client.xml")
-public class Client extends AbstractJUnit4SpringContextTests {
+@ContextConfiguration(locations = "classpath:spring/context.xml")
+public class HelloServiceTest extends AbstractJUnit4SpringContextTests {
 
 	@Autowired
 	private HelloAPI dubboService;

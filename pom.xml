@@ -26,8 +26,7 @@
 
 	<!-- 模块分组 -->
 	<modules>
-		<module>commonAPI</module>
-		<module>javaRMI</module>
+		<module>javarmi</module>
 		<module>dubbo</module>
 	</modules>
 
@@ -35,17 +34,14 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<junit.version>4.12</junit.version>
-		<slf4j.version>1.7.25</slf4j.version>
-		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
 		<jstl.version>1.2</jstl.version>
 		<servlet.version>2.5</servlet.version>
-		<spring.version>3.2.10.RELEASE</spring.version>
 		<mysql.version>5.1.30</mysql.version>
 		<bonecp.version>0.8.0.RELEASE</bonecp.version>
 		<poi.version>3.13</poi.version>
 		<aspectj.version>1.5.4</aspectj.version>
 		<fastjson.version>1.2.8</fastjson.version>
-		<eh.version>2.0.4</eh.version>
+		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
 	</properties>
 
 	<!-- 所有子项目共同依赖的包 -->

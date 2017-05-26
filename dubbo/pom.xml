@@ -9,7 +9,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>dubbo-server</artifactId>
+	<artifactId>dubbo</artifactId>
 	<name>Dubbo Study</name>
 	<description>RPC FrameWork Dubbo</description>
 	<packaging>pom</packaging>
@@ -23,17 +23,33 @@
 	<!-- 版本属性信息 -->
 	<properties>
 		<jstl.version>1.2</jstl.version>
+		<dubbo.version>2.5.3</dubbo.version>
 		<servlet.version>2.5</servlet.version>
 		<spring.version>4.3.6.RELEASE</spring.version>
 	</properties>
+	
+	<dependencyManagement>
+		<dependencies>
+			<!-- spring-test -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${spring.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<!-- Dubbo -->
+			<dependency>
+			    <groupId>com.alibaba</groupId>
+			    <artifactId>dubbo</artifactId>
+			    <version>${dubbo.version}</version>
+			    <exclusions>
+			    	<exclusion>
+			    		<groupId>org.springframework</groupId>
+			    		<artifactId>spring</artifactId>
+			    	</exclusion>
+			    </exclusions>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
-	<dependencies>
-		<!-- spring-test -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>${spring.version}</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
 </project>

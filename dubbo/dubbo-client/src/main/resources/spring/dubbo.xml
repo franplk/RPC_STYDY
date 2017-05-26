@@ -13,6 +13,6 @@
 	<dubbo:registry address="multicast://224.10.10.10:20880" />
 
 	<!-- 生成远程服务代理，可以和本地bean一样使用 -->
-	<dubbo:reference id="dubboService" interface="cn.plk.rpc.api.HelloAPI" />
+	<dubbo:reference id="dubboService" interface="cn.plk.dubbo.api.HelloAPI" />
 
 </beans>

@@ -10,7 +10,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
 	<!-- 自动搜索标注的类 -->
-	<context:component-scan base-package="cn.plk.chatroom.webcontroller" />
+	<context:component-scan base-package="cn.plk.dubbo.client.**.controller" />
 	
 	<!-- 启用注解，使用注解匹配URL的映射以及数据绑定注解等机制 -->
 	<mvc:annotation-driven />

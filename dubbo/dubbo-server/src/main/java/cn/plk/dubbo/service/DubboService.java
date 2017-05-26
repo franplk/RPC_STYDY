@@ -13,6 +13,9 @@ public class DubboService implements HelloAPI {
 
 	@Override
 	public String greeting(String username) {
+		if (username == null || "".equals(username)) {
+			username = "dubbo";
+		}
 		return "Hello," + username;
 	}
 
