@@ -38,6 +38,18 @@
 		    <artifactId>dubbo</artifactId>
 		</dependency>
 		
+		<!-- zookeeper -->
+		<dependency>
+		    <groupId>org.apache.zookeeper</groupId>
+		    <artifactId>zookeeper</artifactId>
+		</dependency>
+		
+		<!-- zkclient -->
+		<dependency>
+		    <groupId>com.101tec</groupId>
+		    <artifactId>zkclient</artifactId>
+		</dependency>
+		
 		<!-- API -->
 		<dependency>
 			<groupId>cn.plk</groupId>

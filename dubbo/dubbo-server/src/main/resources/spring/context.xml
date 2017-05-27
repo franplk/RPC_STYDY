@@ -7,6 +7,10 @@
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 		
+	<!-- Import Local Service Implementation -->
+	<import resource="classpath:spring/service-local.xml"/>
+	
+	<!-- DUBBO Distribution -->
 	<import resource="classpath:spring/dubbo.xml"/>
 		
 </beans>
