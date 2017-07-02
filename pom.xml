@@ -28,6 +28,7 @@
 	<modules>
 		<module>javarmi</module>
 		<module>dubbo</module>
+		<module>zookeeper</module>
 	</modules>
 
 	<!-- 版本属性信息 -->

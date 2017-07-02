@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>cn.plk</groupId>
+		<artifactId>rpc</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>zookeeper</artifactId>
+	<name>Zookeeper Module</name>
+	
+	<!-- 版本属性信息 -->
+	<properties>
+		<zookeeper.version>3.4.10</zookeeper.version>
+	</properties>
+	
+	<dependencies>
+		<!-- zookeeper -->
+		<dependency>
+		    <groupId>org.apache.zookeeper</groupId>
+		    <artifactId>zookeeper</artifactId>
+		    <version>${zookeeper.version}</version>
+		</dependency>
+	</dependencies>
+	
+</project>
